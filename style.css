@@ -12,9 +12,6 @@ body, html {
     color: rgb(247, 7, 127);
 }
 
-
-
-
 @keyframes fullview {
     100% {
         width: 100%
