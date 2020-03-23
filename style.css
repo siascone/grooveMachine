@@ -1,0 +1,113 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 30;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(247, 7, 127);
+}
+
+
+
+
+@keyframes fullview {
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: fullView 0.5s forwards linear;
+    animation: shimmer 2s ; */
+    background-image: linear-gradient(to right, rgb(4, 66, 9), green);
+    
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.column > div {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 4px;
+}
+
+.tone-row1,
+.tone-row2,
+.tone-row3,
+.tone-row4,
+.tone-row5 {
+    background-color: indigo;
+}
+
+.drum-row1,
+.drum-row2,
+.drum-row3,
+.drum-row4 {
+    background-color: hotpink;
+}
+
+.playback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tempo-box {
+    display: flex;
+    flex-direction: column;
+    width: 400;
+}
+.tempo-metrics {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.tempo-metrics h2, span {
+    color: rgb(247, 7, 127);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tempo-slide {
+    width: 400px;
+}
+
+.play {
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 3px;
+    background-color: goldenrod;
+}
+
