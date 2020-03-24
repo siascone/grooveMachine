@@ -1,31 +1,41 @@
 const synth = new Tone.Synth().toMaster();
 
 // Tones e f# g# b c#
-document.querySelector('.tone-row1').addEventListener('click', async () => {
-    await Tone.start();
-    synth.triggerAttackRelease('C#4', '8n');
-});
+const cSharp4 = document.querySelectorAll('.tone-row1');
+const b3 = document.querySelectorAll('.tone-row2');
+const gSharp3 = document.querySelectorAll('.tone-row3');
+const fSharp3 = document.querySelectorAll('.tone-row4');
+const e3 = document.querySelectorAll('.tone-row5');
 
-document.querySelector('.tone-row2').addEventListener('click', async () => {
-    await Tone.start();
-    synth.triggerAttackRelease('B3', '8n');
-});
-
-document.querySelector('.tone-row3').addEventListener('click', async () => {
-    await Tone.start();
-    synth.triggerAttackRelease('G#3', '8n');
-});
-
-document.querySelector('.tone-row4').addEventListener('click', async () => {
-    await Tone.start();
-    synth.triggerAttackRelease('F#3', '8n');
-});
-
-document.querySelector('.tone-row5').addEventListener('click', async () => {
-    await Tone.start();
-    synth.triggerAttackRelease('E3', '8n');
-});
-
-// 
+for (let i = 0; i < cSharp4.length; i++) {
+    cSharp4[i].addEventListener('click', async () => {
+        await Tone.start();
+        synth.triggerAttackRelease('C#4', '8n');
+    });
+}
+for (let i = 0; i < b3.length; i++) {
+    b3[i].addEventListener('click', async () => {
+        await Tone.start();
+        synth.triggerAttackRelease('B3', '8n');
+    });
+}
+for (let i = 0; i < gSharp3.length; i++) {
+    gSharp3[i].addEventListener('click', async () => {
+        await Tone.start();
+        synth.triggerAttackRelease('G#3', '8n');
+    });
+}
+for (let i = 0; i < fSharp3.length; i++) {
+    fSharp3[i].addEventListener('click', async () => {
+        await Tone.start();
+        synth.triggerAttackRelease('F#3', '8n');
+    });
+}
+for (let i = 0; i < e3.length; i++) {
+    e3[i].addEventListener('click', async () => {
+        await Tone.start();
+        synth.triggerAttackRelease('E3', '8n');
+    });
+}
 
 // Drums
