@@ -37,5 +37,3 @@ for (let i = 0; i < e3.length; i++) {
         synth.triggerAttackRelease('E3', '8n');
     });
 }
-
-// Drums
