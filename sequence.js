@@ -81,6 +81,7 @@ const synths = [
     new Tone.NoiseSynth().toMaster(),
     new Tone.MembraneSynth().toMaster()
 ]
+
 const play = document.body.querySelector('.play');
 const pause = document.body.querySelector('.stop');
 const rows = document.body.querySelectorAll('.row');
@@ -103,8 +104,15 @@ function repeat(time) {
         let synth = synths[i],
             note = notes[i],
             row = rows[i],
-            input = row.querySelector(`input:nth-child(${step + 1})`);
-            if (input.checked) synth.triggerAttackRelease(note, '8n', time);
+            input = row.querySelector(`label:nth-child(${step + 1})`);
+            checkbox = input.querySelector('input')
+            if (checkbox.checked) {
+                if (i <= 5 || i === 8) {
+                    synth.triggerAttackRelease(note, '8n', time);
+                } else {
+                    synth.triggerAttackRelease('8n', time)
+                }
+            }
     }
     index++;
 }

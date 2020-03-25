@@ -58,9 +58,10 @@ label {
 
 .row {
     display: flex;
+    justify-content: space-between;
 }
 
-.row > input {
+.row > label {
     display: block;
     width: 20px;
     height: 20px;
@@ -124,7 +125,55 @@ label {
     border-radius: 3px;
     background-color: goldenrod;
 }
+
 .stop {
     margin-left: 5px;
 }
 
+.checkbox-label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 3px;
+    border: 2px solid white;
+}
+
+.checkbox-label .checkbox-custom:after {
+    position: absolute;
+    content: '';
+    /* left: 12px;
+    top: 12px; */
+    height: 0px;
+    width: 0px;
+    border-radius: 3px;
+    /* border: solid goldenrod; */
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: orchid;
+    border-radius: 3px;
+    transform: rotate(0def) scale(1.1);
+    opacity: 1;
+    border: 2px solid white;
+
+}
+.checkbox-label input:hover ~ .checkbox-custom {
+    background-color: orchid;
+    border-radius: 3px;
+    transform: rotate(0def) scale(1.1);
+    opacity: 1;
+    border: 2px solid white;
+
+}
