@@ -42,7 +42,9 @@ label {
     align-items: center;
     /* animation: fullView 0.5s forwards linear;
     animation: shimmer 2s ; */
-    background-image: linear-gradient(to right, rgb(4, 66, 9), green);
+    /* background-image: linear-gradient(to right, rgb(4, 66, 9), green); */
+    background-size: contain;
+    background: url('./background.jpg');
     
 }
 
