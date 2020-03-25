@@ -84,7 +84,7 @@ const synths = [
 const play = document.body.querySelector('.play');
 const pause = document.body.querySelector('.stop');
 const rows = document.body.querySelectorAll('.row');
-const notes = ['E3', 'F#3', 'G#3', 'B3', 'C#3', 'B7', '8n', '8n', 'E1'];
+const notes = ['E3', 'F#3', 'G#3', 'B3', 'C#3', 'B7', 'B7', 'E1', 'E1'];
 
 let index = 0;
 Tone.Transport.scheduleRepeat(repeat, "8n")
