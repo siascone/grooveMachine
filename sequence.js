@@ -85,15 +85,24 @@ const synths = [
 const play = document.body.querySelector('.play');
 const pause = document.body.querySelector('.stop');
 const rows = document.body.querySelectorAll('.row');
-const tempo = document.body.querySelector('.tempo-slide')
+const tempo = document.body.querySelector('.tempo-slide');
+const tempoDisplay = document.body.querySelector('.bpm-display');
+
 const notes = ['E3', 'F#3', 'G#3', 'B3', 'C#3', 'B7', 'B7', 'E1', 'E1'];
 
 let index = 0;
+
 Tone.Transport.scheduleRepeat(repeat, "8n")
 
 tempo.addEventListener('input', e => {
-    Tone.Transport.bpm.rampTo(+e.target.value, 0.1)
-})
+    Tone.Transport.bpm.rampTo(+e.target.value, 0.1);
+    tempoDisplay.value = e.target.value
+});
+
+tempoDisplay.addEventListener('input', e => {
+    tempo.value = e.target.value;
+});
+
 
 play.addEventListener('click', async () => {
     Tone.Transport.start()
@@ -101,9 +110,7 @@ play.addEventListener('click', async () => {
 
 pause.addEventListener('click', async () => {
     Tone.Transport.stop()
-    Tone.Transport.position = 0;
 })
-
 
 function repeat(time) {
     let step = index % 32;

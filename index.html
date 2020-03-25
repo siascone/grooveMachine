@@ -6,7 +6,6 @@
     <title>grooveBox</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
     <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
-    <script src="tempo.js" defer></script>
     <script src='script-tones.js' defer></script>
     <script src='script-drums.js' defer></script>
     <script src='sequence.js' defer></script>
@@ -1196,7 +1195,7 @@
                     <div class=tempo-metrics>
                         <h2>Tempo</h2>
                         <span>bpm
-                            <input class='bpm' type='number' name='value' min='40' max='240' step='1'> 
+                            <input class='bpm-display' type='number' min='40'max='240' value='120'> 
                         </span>
                     </div>
                     <input class='tempo-slide' type='range' min='40'max='240' step='1' value='120'>
