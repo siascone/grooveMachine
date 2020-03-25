@@ -24,7 +24,7 @@ const hatSynth = new Tone.MetalSynth({
     octaves: 1.5
 }).toMaster();
 
-
+// Drums B7 8n 8n E1
 const click = document.querySelectorAll('.drum-row1');
 const hat = document.querySelectorAll('.drum-row2');
 const snare = document.querySelectorAll('.drum-row3');

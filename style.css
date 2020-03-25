@@ -40,16 +40,21 @@ body, html {
     
 }
 
+/* grid and rows */
+
 .grid {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
 }
 
+.row {
+    display: flex;
+}
 
-.column > div {
+.row > input {
     display: block;
     width: 20px;
     height: 20px;
@@ -101,11 +106,19 @@ body, html {
     width: 400px;
 }
 
-.play {
+.play-stop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play, .stop {
     border: none;
     height: 30px;
     width: 70px;
     border-radius: 3px;
     background-color: goldenrod;
+}
+.stop {
+    margin-left: 5px;
 }
 
