@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
     <script src='script-tones.js' defer></script>
     <script src='script-drums.js' defer></script>
+    <script src='sequence.js' defer></script>
 </head>
 <body>
     <div class='main'>
@@ -16,357 +17,1177 @@
                 <h1>grooveBox</h1>
             </div>
             <div class='grid'>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
+                <Label>Synthesiser</Label>
+                <div class='row'>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='tone-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
                 </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
+            <div class='row'>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row2'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+            </div>
+            <div class='row'>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row3'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+            </div>
+            <div class='row'>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row4'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+            </div>
+            <div class='row'>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+                <label class='checkbox-label'>
+                    <input type="checkbox" class='tone-row5'></input>
+                    <span class='checkbox-custom'></span>
+                </label>
+            </div>
+                <Label>Drum Machine</Label>
+                <div class='row'>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row1'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
                 </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
+                <div class='row'>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row2'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
                 </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
+                <div class='row'>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row3'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
                 </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
-                </div>
-                <div class='column'>
-                    <div class="tone-row1"></div>
-                    <div class="tone-row2"></div>
-                    <div class="tone-row3"></div>
-                    <div class="tone-row4"></div>
-                    <div class="tone-row5"></div>
-                    <div class="drum-row1"></div>
-                    <div class="drum-row2"></div>
-                    <div class="drum-row3"></div>
-                    <div class="drum-row4"></div>
+                <div class='row'>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
+                    <label class='checkbox-label'>
+                        <input type="checkbox" class='drum-row4'></input>
+                        <span class='checkbox-custom'></span>
+                    </label>
                 </div>
             </div>
             <div class='playback'>
@@ -379,7 +1200,10 @@
                     </div>
                     <input class='tempo-slide' type='range' min='1'max='101' step='1'>
                 </div>
-                <button class='play'>Play</button>
+                <div class='play-stop'>
+                    <button class='play'>Play</button>
+                    <button class='stop'>Stop</button>
+                </div>
             </div>
         </div>
     </div>

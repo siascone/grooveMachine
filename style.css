@@ -12,6 +12,12 @@ body, html {
     color: rgb(247, 7, 127);
 }
 
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    margin: 5px;
+    font-weight: bold;
+}
 
 @keyframes fullview {
     100% {
@@ -40,16 +46,22 @@ body, html {
     
 }
 
+/* grid and rows */
+
 .grid {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+}
 
-.column > div {
+.row > label {
     display: block;
     width: 20px;
     height: 20px;
@@ -101,7 +113,12 @@ body, html {
     width: 400px;
 }
 
-.play {
+.play-stop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play, .stop {
     border: none;
     height: 30px;
     width: 70px;
@@ -109,3 +126,54 @@ body, html {
     background-color: goldenrod;
 }
 
+.stop {
+    margin-left: 5px;
+}
+
+.checkbox-label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 3px;
+    border: 2px solid white;
+}
+
+.checkbox-label .checkbox-custom:after {
+    position: absolute;
+    content: '';
+    /* left: 12px;
+    top: 12px; */
+    height: 0px;
+    width: 0px;
+    border-radius: 3px;
+    /* border: solid goldenrod; */
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: orchid;
+    border-radius: 3px;
+    transform: rotate(0def) scale(1.1);
+    opacity: 1;
+    border: 2px solid white;
+
+}
+.checkbox-label input:hover ~ .checkbox-custom {
+    background-color: orchid;
+    border-radius: 3px;
+    transform: rotate(0def) scale(1.1);
+    opacity: 1;
+    border: 2px solid white;
+
+}
