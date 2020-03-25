@@ -21,6 +21,39 @@ const synths = [
             sustain: 0.4,
             release: 0.5
         }
+    }),
+    new Tone.Synth({
+        oscillator: {
+            type: 'sine'
+        },
+        envelope: {
+            attack: 0.01,
+            decay: 0.2,
+            sustain: 0.4,
+            release: 0.5
+        }
+    }),
+    new Tone.Synth({
+        oscillator: {
+            type: 'sine'
+        },
+        envelope: {
+            attack: 0.01,
+            decay: 0.2,
+            sustain: 0.4,
+            release: 0.5
+        }
+    }),
+    new Tone.Synth({
+        oscillator: {
+            type: 'sine'
+        },
+        envelope: {
+            attack: 0.01,
+            decay: 0.2,
+            sustain: 0.4,
+            release: 0.5
+        }
     }), 
     new Tone.Synth({
         oscillator: {
@@ -81,10 +114,10 @@ const synths = [
     new Tone.NoiseSynth(),
     new Tone.MembraneSynth()
 ]
-const gain = new Tone.Gain(0.7)
-gain.toMaster()
+// const gain = new Tone.Gain(0.7)
+// gain.toMaster()
 
-synths.forEach(synth => synth.connect(gain))
+synths.forEach(synth => synth.toMaster())
 
 
 const play = document.body.querySelector('.play');
@@ -93,7 +126,7 @@ const rows = document.body.querySelectorAll('.row');
 const tempo = document.body.querySelector('.tempo-slide');
 const tempoDisplay = document.body.querySelector('.bpm-display');
 
-const notes = ['E4', 'F#4', 'G#4', 'B4', 'C#5', 'B7', 'B7', 'E1', 'E1'];
+const notes = ['E5', 'D5', 'C5', 'B4', 'A4', 'G4', 'F#4', 'E4', 'B7', 'B7', 'E1', 'E1'];
 
 let index = 0;
 
@@ -127,10 +160,10 @@ function repeat(time) {
             input = row.querySelector(`label:nth-child(${step + 1})`);
             checkbox = input.querySelector('input')
             if (checkbox.checked) {
-                if (i <= 5 || i === 8) {
+                if (i <= 8 || i === 11) {
                     synth.triggerAttackRelease(note, '8n', time);
                 } else {
-                    synth.triggerAttackRelease('8n', time)
+                    synth.triggerAttackRelease('8n', time);
                 }
             }
     }
