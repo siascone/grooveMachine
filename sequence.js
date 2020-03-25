@@ -100,6 +100,7 @@ tempo.addEventListener('input', e => {
 });
 
 tempoDisplay.addEventListener('input', e => {
+    Tone.Transport.bpm.rampTo(+e.target.value, 0.1);
     tempo.value = e.target.value;
 });
 
