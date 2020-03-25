@@ -12,43 +12,16 @@ body, html {
     color: rgb(247, 7, 127);
 }
 
-label {
-    font-family: Arial, Helvetica, sans-serif;
-    color: orange;
-    margin: 5px;
-    font-weight: bold;
-}
-
-@keyframes fullview {
-    100% {
-        width: 100%
-    }
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -1000px 0;
-    }
-    100% {
-        background-position: 1000px 0;
-    }
-}
-
 .main {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* animation: fullView 0.5s forwards linear;
-    animation: shimmer 2s ; */
-    /* background-image: linear-gradient(to right, rgb(4, 66, 9), green); */
     background-size: contain;
     background: url('./background.jpg');
     
 }
-
-/* grid and rows */
 
 .grid {
     display: flex;
@@ -71,25 +44,11 @@ label {
     margin: 4px;
 }
 
-.tone-row1,
-.tone-row2,
-.tone-row3,
-.tone-row4,
-.tone-row5 {
-    background-color: indigo;
-}
-
-.drum-row1,
-.drum-row2,
-.drum-row3,
-.drum-row4 {
-    background-color: hotpink;
-}
-
 .playback {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5px 0 5px 5px;
 }
 
 .tempo-box {
@@ -101,7 +60,6 @@ label {
     display: flex;
     height: 30px;
     justify-content: space-between;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -132,50 +90,12 @@ label {
     margin-left: 5px;
 }
 
-.checkbox-label input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.checkbox-label .checkbox-custom {
-    position: absolute;
-    /* top: 0px;
-    left: 0px; */
-    height: 20px;
-    width: 20px;
-    background-color: gray;
-    border-radius: 3px;
-    border: 2px solid white;
-}
-
-.checkbox-label .checkbox-custom:after {
-    position: absolute;
-    content: '';
-    /* left: 12px;
-    top: 12px; */
-    height: 0px;
-    width: 0px;
-    border-radius: 3px;
-    /* border: solid goldenrod; */
-    transform: rotate(0deg) scale(0);
-    opacity: 1;
-}
-
-
-.checkbox-label input:checked ~ .checkbox-custom {
-    background-color: orchid;
-    border-radius: 3px;
-    transform: rotate(0def) scale(1.1);
-    opacity: 1;
-    border: 2px solid white;
-
-}
-.checkbox-label input:hover ~ .checkbox-custom {
-    background-color: orchid;
-    border-radius: 3px;
-    transform: rotate(0def) scale(1.1);
-    opacity: 1;
-    border: 2px solid white;
-
+.instrument {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 5px 5px 5px 12px;
+    font-weight: bold;
 }

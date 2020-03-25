@@ -10,7 +10,7 @@ const synths = [
             sustain: 0.4,
             release: 0.5
         }
-    }).toMaster(),
+    }),
     new Tone.Synth({
         oscillator: {
             type: 'sine'
@@ -21,7 +21,7 @@ const synths = [
             sustain: 0.4,
             release: 0.5
         }
-    }).toMaster(), 
+    }), 
     new Tone.Synth({
         oscillator: {
             type: 'sine'
@@ -32,7 +32,7 @@ const synths = [
             sustain: 0.4,
             release: 0.5
         }
-    }).toMaster(),
+    }),
     new Tone.Synth({
         oscillator: {
             type: 'sine'
@@ -43,7 +43,7 @@ const synths = [
             sustain: 0.4,
             release: 0.5
         }
-    }).toMaster(),
+    }),
     new Tone.Synth({
         oscillator: {
             type: 'sine'
@@ -54,7 +54,7 @@ const synths = [
             sustain: 0.4,
             release: 0.5
         }
-    }).toMaster(),
+    }),
     new Tone.Synth({
         oscillator: {
             type: 'sine',
@@ -65,7 +65,7 @@ const synths = [
             sustain: 0,
             release: 0.05
         }
-    }).toMaster(),
+    }),
     new Tone.MetalSynth({
         frequency: 161.82,
         envelope: {
@@ -77,10 +77,15 @@ const synths = [
         modulationIndex: 32,
         resonance: 40,
         octaves: 1.5
-    }).toMaster(),
-    new Tone.NoiseSynth().toMaster(),
-    new Tone.MembraneSynth().toMaster()
+    }),
+    new Tone.NoiseSynth(),
+    new Tone.MembraneSynth()
 ]
+const gain = new Tone.Gain(0.7)
+gain.toMaster()
+
+synths.forEach(synth => synth.connect(gain))
+
 
 const play = document.body.querySelector('.play');
 const pause = document.body.querySelector('.stop');
@@ -88,7 +93,7 @@ const rows = document.body.querySelectorAll('.row');
 const tempo = document.body.querySelector('.tempo-slide');
 const tempoDisplay = document.body.querySelector('.bpm-display');
 
-const notes = ['E3', 'F#3', 'G#3', 'B3', 'C#3', 'B7', 'B7', 'E1', 'E1'];
+const notes = ['E4', 'F#4', 'G#4', 'B4', 'C#5', 'B7', 'B7', 'E1', 'E1'];
 
 let index = 0;
 
