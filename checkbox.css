@@ -89,3 +89,10 @@
     border: 2px solid white;
 
 }
+
+/* border color change during playback */
+
+.highlight {
+    border: 2px solid goldenrod;
+    /* outline-style: solid; */
+}

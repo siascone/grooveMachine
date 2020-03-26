@@ -167,6 +167,7 @@ function repeat(time) {
                     synth.triggerAttackRelease('8n', time);
                 }
             }
+            input.classList.toggle('highlight')
     }
     index++;
 }
