@@ -123,23 +123,24 @@ synths.forEach(synth => synth.toMaster())
 const play = document.body.querySelector('.play');
 const pause = document.body.querySelector('.stop');
 const rows = document.body.querySelectorAll('.row');
-const tempo = document.body.querySelector('.tempo-slide');
+// const tempo = document.body.querySelector('.tempo-slide');
 const tempoDisplay = document.body.querySelector('.bpm-display');
 
 const notes = ['E5', 'D5', 'C5', 'B4', 'A4', 'G4', 'F#4', 'E4', 'B7', 'B7', 'E1', 'E1'];
 
 let index = 0;
 
+Tone.Transport.bpm.value = 210
 Tone.Transport.scheduleRepeat(repeat, "8n")
 
-tempo.addEventListener('input', e => {
-    Tone.Transport.bpm.rampTo(+e.target.value, 0.1);
-    tempoDisplay.value = e.target.value
-});
+// tempo.addEventListener('input', e => {
+//     Tone.Transport.bpm.rampTo(e.target.value, 0.1);
+//     tempoDisplay.value = e.target.value
+// });
 
 tempoDisplay.addEventListener('input', e => {
-    Tone.Transport.bpm.rampTo(+e.target.value, 0.1);
-    tempo.value = e.target.value;
+    Tone.Transport.bpm.rampTo(e.target.value, 0.1);
+    // tempo.value = e.target.value;
 });
 
 
