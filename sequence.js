@@ -130,7 +130,7 @@ const notes = ['E5', 'D5', 'C5', 'B4', 'A4', 'G4', 'F#4', 'E4', 'B7', 'B7', 'E1'
 
 let index = 0;
 
-Tone.Transport.bpm.value = 210
+Tone.Transport.bpm.value = 200
 Tone.Transport.scheduleRepeat(repeat, "8n")
 
 // tempo.addEventListener('input', e => {
@@ -159,7 +159,8 @@ function repeat(time) {
             note = notes[i],
             row = rows[i],
             input = row.querySelector(`label:nth-child(${step + 1})`);
-            checkbox = input.querySelector('input')
+            span = input.querySelector(`span`);
+            checkbox = input.querySelector('input');
             if (checkbox.checked) {
                 if (i <= 8 || i === 11) {
                     synth.triggerAttackRelease(note, '8n', time);
@@ -167,7 +168,7 @@ function repeat(time) {
                     synth.triggerAttackRelease('8n', time);
                 }
             }
-            input.classList.toggle('highlight')
+            span.classList.toggle('highlight')
     }
     index++;
 }

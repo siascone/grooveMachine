@@ -1,3 +1,7 @@
+.highlight {
+    border: solid 2px rgb(139, 3, 193) !important;
+}
+
 /* tones */
 
 .checkbox-label-tone input{
@@ -8,8 +12,6 @@
 
 .checkbox-label-tone .checkbox-custom-tone {
     position: absolute;
-    /* top: 0px;
-    left: 0px; */
     height: 20px;
     width: 20px;
     background-color: gray;
@@ -33,7 +35,7 @@
     border-radius: 3px;
     transform: rotate(0def) scale(1.1);
     opacity: 1;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 
 }
 .checkbox-label-tone input:hover ~ .checkbox-custom-tone {
@@ -41,7 +43,7 @@
     border-radius: 3px;
     transform: rotate(0def) scale(1.1);
     opacity: 1;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 
 }
 
@@ -78,7 +80,7 @@
     border-radius: 3px;
     transform: rotate(0def) scale(1.1);
     opacity: 1;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 
 }
 .checkbox-label-drum input:hover ~ .checkbox-custom-drum {
@@ -86,13 +88,8 @@
     border-radius: 3px;
     transform: rotate(0def) scale(1.1);
     opacity: 1;
-    border: 2px solid white;
-
+    /* border: 2px solid white; */
 }
 
 /* border color change during playback */
 
-.highlight {
-    border: 2px solid goldenrod;
-    /* outline-style: solid; */
-}
