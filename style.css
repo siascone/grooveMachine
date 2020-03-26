@@ -48,7 +48,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px 0 5px 5px;
+    margin: 10px 0 5px 5px;
 }
 
 .tempo-box {
@@ -60,6 +60,7 @@ body, html {
 .tempo-metrics {
     display: flex;
     height: 30px;
+    width: 400px;
     justify-content: space-between;
     align-items: center;
 }
@@ -84,6 +85,7 @@ body, html {
     outline: none;
     
 }
+
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
@@ -92,11 +94,6 @@ input[type=number]::-webkit-inner-spin-button {
     color: rgb(247, 7, 127);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    /* text-shadow: 1px 1px white; */
-}
-
-.tempo-slide {
-    width: 400px;
 }
 
 .play-stop {
@@ -118,9 +115,9 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.clear {
+.clear, .reset {
     height: 30px;
-    width: 140px;
+    width: 150px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -142,7 +139,7 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin: 5px 5px 5px 12px;
+    margin: 10px 5px 5px 12px;
     font-weight: bold;
 }
 

@@ -123,9 +123,11 @@ const check = document.body.querySelectorAll('input')
 const play = document.body.querySelector('.play');
 const pause = document.body.querySelector('.stop');
 const rows = document.body.querySelectorAll('.row');
-// const tempo = document.body.querySelector('.tempo-slide');
+const tempo = document.body.querySelector('.tempo-slide');
 const tempoDisplay = document.body.querySelector('.bpm-display');
-const reset = document.body.querySelector('.clear')
+const clear = document.body.querySelector('.clear');
+const reset = document.body.querySelector('.reset');
+const spans = document.body.querySelectorAll('span');
 const notes = ['E5', 'D5', 'C5', 'B4', 'A4', 'G4', 'F#4', 'E4', 'B7', 'B7', 'E1', 'E1'];
 
 let index = 0;
@@ -133,12 +135,19 @@ let index = 0;
 Tone.Transport.bpm.value = 200
 Tone.Transport.scheduleRepeat(repeat, "8n")
 
-// tempo.addEventListener('input', e => {
-//     Tone.Transport.bpm.rampTo(e.target.value, 0.1);
-//     tempoDisplay.value = e.target.value
-// });
-
 reset.addEventListener('click', e => {
+    index = 0;
+    Tone.Transport.stop();
+    spans.forEach(span => span.classList.remove('highlight'))
+})
+
+tempo.addEventListener( "change", e => {
+    Tone.Transport.bpm.rampTo(e.target.value, 0.1);
+    tempoDisplay.value = e.target.value
+    
+});
+
+clear.addEventListener('click', e => {
     for (let i = 0; i < check.length; i++) {
         if (check[i].checked === true) {
             check[i].checked = false
@@ -148,7 +157,7 @@ reset.addEventListener('click', e => {
 
 tempoDisplay.addEventListener('input', e => {
     Tone.Transport.bpm.rampTo(e.target.value, 0.1);
-    // tempo.value = e.target.value;
+    tempo.value = e.target.value;
 });
 
 
