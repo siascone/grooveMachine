@@ -49,6 +49,33 @@ The .toMaster() function is used to send the tone the main audio output.
 
 ### Step Sequence
 
+The step sequence was achieved by the use of strategic DOM queries and a mapping of each row's first element with an array of tone synths and notes.
+
+     const notes = ['E5', 'D5', 'C5', 'B4', 'A4', 'G4', 'F#4', 'E4', 'B7', 'B7', 'E1', 'E1'];
+     const rows = document.body.querySelectorAll('.row');
+     const spans = document.body.querySelectorAll('span');
+     
+     function repeat(time) {
+     let step = index % 32;
+     for (let i = 0; i < rows.length; i++) {
+         let synth = synths[i],
+             note = notes[i],
+             row = rows[i],
+             input = row.querySelector(`label:nth-child(${step + 1})`);
+             span = input.querySelector(`span`);
+             checkbox = input.querySelector('input');
+             if (checkbox.checked) {
+                 if (i <= 8 || i === 11) {
+                     synth.triggerAttackRelease(note, '8n', time);
+                 } else {
+                     synth.triggerAttackRelease('8n', time);
+                 }
+             }
+             span.classList.toggle('highlight')
+     }
+     index++;
+}
+
 ### Playback and Reset
 
 ## Planned Future Features
