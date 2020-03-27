@@ -14,7 +14,7 @@ Groove Machine was constructed utilizing a combination of JavaScript, Tone.js, H
 
 ### Tone and Rhythm Selection
 
-Users can easily select a unique arrangement of sounds from 8 tones and 4 rhythms mapped across a 384 button grid. Each row corresponds with a single sound that is generated using a Tone.js synth. Utilizing Tone.js' synth method allows the application to generate the sound instantly upon each press of the button or step in the sequence during play back. This allows the appliction to be free of any stored tone library. The follwing code demonstrates how a tone is generated in the program.
+Users can easily select a unique arrangement of sounds from 8 tones and 4 rhythms mapped across a 384 checkbox input grid. Each row corresponds with a single tone that is generated using a Tone.js synth. Utilizing Tone.js' synth methods allows the application to generate the sound instantly upon each press of the button or step in the sequence during playback. This allows the appliction to be free of any stored tone library. The follwing code snippet demonstrates how a tone is generated in the program.
 
 #### Tone 1
 
@@ -49,7 +49,7 @@ The .toMaster() function is used to send the tone the main audio output.
 
 ### Step Sequence
 
-The step sequence was achieved by the use of strategic DOM queries and a mapping of each row's first element with an array of tone synths and notes.
+The step sequence was achieved by the use of strategic DOM queries and a mapping of each row's nth input with arrays of tone synths and notes. The following code snippet demonstrates this logic.
 
      const notes = ['E5', 'D5', 'C5', 'B4', 'A4', 'G4', 'F#4', 'E4', 'B7', 'B7', 'E1', 'E1'];
      const rows = document.body.querySelectorAll('.row');
@@ -72,11 +72,13 @@ The step sequence was achieved by the use of strategic DOM queries and a mapping
                  }
              }
              span.classList.toggle('highlight')
+         }
+         index++;
      }
-     index++;
-}
 
 ### Playback and Reset
+
+Users can manipulate playback in a number of ways. The Play/Pause buttons start and stop the sequencer by calling Tone.Transport.start() or .stop() respectively. The Reset button returns the sequence to the original starting position by setting the step interval to zero and calling the .stop() function. The tempo slide allows the user to change the beats per minute(bpm) by adjusting the Tone.Transport.bpm.value. And lastly the Clear Selection button clears all selected tones and rhythms by setting any checked input to .checked === false.
 
 ## Planned Future Features
 
