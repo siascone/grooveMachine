@@ -18,10 +18,11 @@ body, html {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: contain;
-    background: url('./background.jpg');
+    background: url('./assets/background.jpg');
     
 }
 
@@ -148,4 +149,37 @@ input[type=number]::-webkit-inner-spin-button {
 
 button:hover {
     background-color: hotpink;
+}
+
+.links {
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+.github {
+    background: url('./assets/icons/github-logo.png');
+    background-size: contain;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.linkedIn {
+    background: url('./assets/icons/linkedIn.png');
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    border-radius: 3px;
+}
+
+.angelList {
+    background: url('./assets/icons/angelList.png');
+    background-size: contain;
+    width: 31px;
+    height: 31px;
 }

@@ -1,1 +1,1 @@
-![web-view](grooveMachine.png)
+![web-view](assets/grooveMachine.png)
