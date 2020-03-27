@@ -2,7 +2,7 @@
 
 Groove Machine is a 32 step sequencer with an 8 track, aeolian mode, tone selection grid and a 4 track Drum Machine with which users can create and manipulate original and groovy loops.
 
-Check it out here!()
+[Check it out here!](https://siascone.github.io/grooveMachine/)
 
 ![web-view](assets/grooveMachine.png)
 
