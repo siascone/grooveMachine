@@ -1,4 +1,5 @@
-
+const gainTone = new Tone.Gain(0.1)
+gainTone.toMaster()
 
 const synth = new Tone.Synth({
     oscillator: {
@@ -10,7 +11,7 @@ const synth = new Tone.Synth({
         sustain: 0.4,
         release: 0.5
     }
-}).toMaster();
+}).connect(gainTone);
 
 // Tones e f# g a b c d e
 const e5 = document.querySelectorAll('.tone-row1');

@@ -114,10 +114,11 @@ const synths = [
     new Tone.NoiseSynth(),
     new Tone.MembraneSynth()
 ]
-// const gain = new Tone.Gain(0.7)
-// gain.toMaster()
 
-synths.forEach(synth => synth.toMaster())
+const gain = new Tone.Gain(0.1)
+gain.toMaster()
+
+synths.forEach(synth => synth.connect(gain))
 
 const check = document.body.querySelectorAll('input')
 const play = document.body.querySelector('.play');

@@ -1,5 +1,8 @@
-const noiseSynth = new Tone.NoiseSynth().toMaster();
-const membrane = new Tone.MembraneSynth().toMaster();
+const gainDrum = new Tone.Gain(0.1)
+gainDrum.toMaster()
+
+const noiseSynth = new Tone.NoiseSynth().connect(gainDrum);
+const membrane = new Tone.MembraneSynth().connect(gainDrum);
 const clickSynth = new Tone.Synth({
         oscillator: {
             type: 'sine',
@@ -10,7 +13,7 @@ const clickSynth = new Tone.Synth({
             sustain: 0,
             release: 0.05
         }
-}).toMaster();
+}).connect(gainDrum);
 const hatSynth = new Tone.MetalSynth({
     frequency: 161.82,
     envelope: {
@@ -22,7 +25,7 @@ const hatSynth = new Tone.MetalSynth({
     modulationIndex: 32,
     resonance: 40,
     octaves: 1.5
-}).toMaster();
+}).connect(gainDrum);
 
 // Drums B7 8n 8n E1
 const click = document.querySelectorAll('.drum-row1');
