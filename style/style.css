@@ -21,7 +21,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: contain;
+    background-size: cover;
     background: url('../assets/background.jpg');
     
 }
@@ -172,7 +172,7 @@ button:hover {
 
 .github {
     background: url('../assets/icons/github-logo.png');
-    background-size: contain;
+    background-size: cover;
     border-radius: 15px;
     width: 30px;
     height: 30px;
@@ -181,7 +181,7 @@ button:hover {
 
 .linkedIn {
     background: url('../assets/icons/linkedIn.png');
-    background-size: contain;
+    background-size: cover;
     width: 28px;
     height: 28px;
     border-radius: 3px;
@@ -190,7 +190,7 @@ button:hover {
 
 .angelList {
     background: url('../assets/icons/angelList.png');
-    background-size: contain;
+    background-size: cover;
     width: 31px;
     height: 31px;
     cursor: pointer;
