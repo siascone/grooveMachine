@@ -8,7 +8,7 @@ Groove Machine is a 32 step sequencer with an 8 track, aeolian mode, tone select
 
 ## Technologies Used
 
-Groove Machine was constructed utilizing a combination of JavaScript, Tone.js, HTML and CSS. JavaScript was used for the main logic along with Tone.js to generate the various sound samples. HTML was used to structure the application and CSS was used for styling.
+Groove Machine was constructed utilizing a combination of JavaScript, Tone.js, HTML and CSS. JavaScript was used for the main logic along with Tone.js to generate the various synthesized sounds. HTML was used to structure the application and CSS was used for styling.
 
 ## Features
 
@@ -28,7 +28,7 @@ Users can easily select a unique arrangement of sounds from 8 tones and 4 rhythm
              sustain: 0.4,
              release: 0.5
          }
-     }).toMaster();
+     }).connect(gain);
     
 #### Rhythm 3
 
@@ -43,9 +43,9 @@ Users can easily select a unique arrangement of sounds from 8 tones and 4 rhythm
          modulationIndex: 32,
          resonance: 40,
          octaves: 1.5
-     }).toMaster();
+     }).connect(gain);
 
-The .toMaster() function is used to send the tone the main audio output.
+The .connect(gain) function does two things. It first reduces the initial output volume of each synth to prevent clipping as well as any aural discomfort a user may have if experiencing the application via headphones. The function then sends the synth the master audio output so it can be heard.
 
 ### Step Sequence
 
@@ -78,11 +78,10 @@ The step sequence was achieved by the use of strategic DOM queries and a mapping
 
 ### Playback and Reset
 
-Users can manipulate playback in a number of ways. The Play/Pause buttons start and stop the sequencer by calling Tone.Transport.start() or .stop() respectively. The Reset button returns the sequence to the original starting position by setting the step interval to zero and calling the .stop() function. The tempo slide allows the user to change the beats per minute(bpm) by adjusting the Tone.Transport.bpm.value. And lastly the Clear Selection button clears all selected tones and rhythms by setting any checked input to .checked === false.
+Users can manipulate playback in a number of ways. The Play/Pause buttons start and stop the sequencer by calling Tone.Transport.start() or .stop() respectively. The Reset button returns the sequence to the original starting position and pauses playback by setting the step interval to zero and calling the .stop() function. The tempo slide allows the user to change the beats per minute(bpm) by adjusting the Tone.Transport.bpm.value. And lastly the Clear Selection button clears all selected tones and rhythms by setting any checked input to .checked === false.
 
 ## Planned Future Features
 
-* Volume controle.
 * Scale key and drum selection.
 * Loop recording, playback and sharing.
 
