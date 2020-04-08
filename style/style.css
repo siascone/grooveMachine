@@ -165,8 +165,9 @@ button:hover {
     width: 150px;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 60px;
+    margin-top: 65px;
     align-items: center;
+    z-index: 10;
 }
 
 
