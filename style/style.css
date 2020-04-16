@@ -225,3 +225,7 @@ button:hover {
     height: 31px;
     cursor: pointer;
 }
+
+.grid > div > label > span {
+    cursor: pointer;
+}
