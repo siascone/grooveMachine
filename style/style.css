@@ -108,6 +108,7 @@ input[type=number]::-webkit-inner-spin-button {
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 40xp;
 }
 
 .play-stop {
@@ -169,9 +170,6 @@ button:hover {
     z-index: 10;
     margin-top: 65px;
     width: 500x;
-    /* position: absolute;
-    left: 600px;
-    top: 75px */
 }
 
 .links {
@@ -180,7 +178,6 @@ button:hover {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid white; */
     
     
 }
@@ -197,13 +194,13 @@ button:hover {
     color: rgb(247, 7, 127);
     margin-bottom: 5px;
     margin-top: 9px;
-    /* border: 1px solid white; */
 }
 
 .github {
     background: url('../assets/icons/github-logo.png');
     background-size: cover;
     border-radius: 15px;
+    background-color: white;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -229,3 +226,4 @@ button:hover {
 .grid > div > label > span {
     cursor: pointer;
 }
+
