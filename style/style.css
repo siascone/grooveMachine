@@ -1,37 +1,63 @@
 body, html {
   height: 100%;
   margin: 0;
+
 }
 
 .logo-img {
     height: 100px;
     width: 100px;
+    position: relative;
+
 }
 
 .grooveBox {
     display: flex;
     flex-direction: column;
 }
+
 .title {
     display: flex;
-
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: rgb(247, 7, 127);
-}
-
-.title-heading-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .title-heading {
     display: flex;
     font-size: 30px;
     padding: 5px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -10px;
+    transform: rotate(-2deg);
 }
+
+.title-heading span {
+    height: 155px;
+    position: absolute;
+    width: 20px;
+    left: 0;
+    right: 0;
+    transform-origin: bottom center;
+}
+
+.char1 { transform: rotate(-60deg); }
+.char2 { transform: rotate(-49deg); }
+.char3 { transform: rotate(-39deg); }
+.char4 { transform: rotate(-28deg); }
+.char5 { transform: rotate(-18deg); }
+.char6 { transform: rotate(-9deg); }
+.char7 { transform: rotate(-1deg); }
+.char8 { transform: rotate(16deg); }
+.char9 { transform: rotate(28deg); }
+.char10 { transform: rotate(38deg); }
+.char11 { transform: rotate(48deg); }
+.char12 { transform: rotate(58deg); }
+.char13 { transform: rotate(63deg); }
+.char14 { transform: rotate(73deg); }
 
 .main {
     height: 100%;
@@ -40,10 +66,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background: url('../assets/background.jpg');
-    position: absolute;
-    
+    background-color: black;   
 }
 
 .grid {
@@ -162,8 +185,8 @@ input[type=number]::-webkit-inner-spin-button {
     z-index: 10;
 }
 
-.stop, .reset {
-    margin-left: 5px;
+.stop, .reset, .clear {
+    margin-left: 12px;
 }
 
 .instrument {
@@ -186,17 +209,13 @@ button:hover {
     z-index: 10;
     margin-top: 35px;
     align-items: center;
-    /* width: 500x; */
 }
 
 .links {
     display: flex;
     width: 150px;
     flex-direction: row;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    
-    
+    justify-content: space-evenly;    
 }
 
 .name {
