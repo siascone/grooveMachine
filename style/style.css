@@ -163,7 +163,7 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.clear, .reset {
+.clear {
     height: 30px;
     width: 150px;
     font-family: Arial, Helvetica, sans-serif;
@@ -178,8 +178,23 @@ input[type=number]::-webkit-inner-spin-button {
     /* z-index: 10; */
 }
 
+.reset {
+    height: 30px;
+    width: 165px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(247, 7, 127);
+    border: solid white 2px;
+    outline: none;
+    cursor: pointer;
+    /* z-index: 10; */
+}
+
 .stop, .reset, .clear {
-    margin-left: 12px;
+    margin-left: 8px;
 }
 
 .instrument {
