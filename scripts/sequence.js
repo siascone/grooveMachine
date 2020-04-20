@@ -146,7 +146,7 @@ tempo.addEventListener( "input", e => {
 
 reset.addEventListener('click', e => {
     index = 0;
-    Tone.Transport.stop();
+    // Tone.Transport.stop();
     spans.forEach(span => span.classList.remove('highlight'))
 })
 
